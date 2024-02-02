@@ -1,0 +1,204 @@
+[
+	{
+		"name": "David Singer",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected",
+   			        "chair": true
+			}
+		]
+	},
+	{
+		"name": "Robin Berjon",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected"
+			}
+		]
+	},
+	{
+		"name": "Koichi Moriyama",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected"
+			}
+		]
+	},
+	{
+		"name": "Mark Nottingham",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected",
+				"officer": "secretary"
+			}
+		]
+	},
+	{
+		"name": "Eric Siow",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected"
+			}
+		]
+	},
+	{
+		"name": "Léonie Watson",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected"
+			}
+		]
+	},
+	{
+		"name": "Hongru (Judy) Zhu",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "elected"
+			}
+		]
+	},
+	{
+		"name": "Dominique Hazaël-Massieux",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "partner"
+			}
+		]
+	},
+	{
+		"name": "Jun Murai",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "partner"
+			}
+		]
+	},
+	{
+		"name": "Chunming Hu",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "partner"
+			}
+		]
+	},
+	{
+		"name": "Tim Berners-Lee",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "permanent"
+			}
+		]
+	},
+	{
+		"name": "William Judge",
+		"term": [
+			{
+				"start": "2022-10-01",
+				"end": "2024-01-08",
+                                "type": "staff-officer",
+				"officer": "treasurer"
+			}
+		]
+	},
+	{
+		"name": "Jeffrey Jaffe",
+		"term": [
+			{
+				"start": "2022-10-01",
+				"end": "2022-12-19",
+                                "type": "staff-officer",
+				"officer": "president"
+			}
+		]
+	},
+	{
+		"name": "Ralph Swick",
+		"term": [
+			{
+				"start": "2022-12-19",
+				"end": "2023-11-14",
+                                "type": "staff-officer",
+				"officer": "president"
+			}
+		]
+	},
+	{
+		"name": "Seth Dobbs",
+		"term": [
+			{
+				"start": "2023-11-14",
+                                "type": "staff-officer",
+				"officer": "president"
+			}
+		]
+	},
+	{
+		"name": "Ian Jacobs",
+		"term": [
+			{
+				"start": "2023-05-14",
+                                "type": "staff-contact"
+			}
+		]
+	},
+	{
+		"name": "Wendy Seltzer",
+		"term": [
+			{
+				"start": "2022-10-01",
+				"end": "2022-12-31",
+				"type": "staff-officer",
+				"officer": "secretary"
+			}
+		]
+	},
+	{
+		"name": "Florian Rivoal",
+		"term": [
+			{
+				"start": "2022-12-11",
+				"end": "2023-06-30"
+                                "type": "abliaison"
+			}
+		]
+	},
+	{
+		"name": "Heejin Chung",
+		"term": [
+			{
+				"start": "2022-12-11",
+				"end": "2023-06-30"
+                                "type": "abliaison"
+			}
+		]
+	},
+	{
+		"name": "Elika Etimad",
+		"term": [
+			{
+				"start": "2023-07-01"
+                                "type": "abliaison"
+			}
+		]
+	},
+	{
+		"name": "Tantek Çelik",
+		"term": [
+			{
+				"start": "2023-07-01"
+                                "type": "abliaison"
+			}
+		]
+	},
+]
