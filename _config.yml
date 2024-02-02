@@ -1,0 +1,6 @@
+---
+  exclude:
+      - sass-cache/
+      - .jekyll-cache/
+  include:
+      - node_modules
