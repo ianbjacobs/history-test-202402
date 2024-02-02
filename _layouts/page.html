@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta property="og:image" content="/asset/TAG-logo.png" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/asset/site.css" rel="stylesheet">
+  </head>
+  <body>
+
+    {% include navbar.html %}
+
+      <div class="container">
+
+        <div class="page-header">
+          <h1>
+            {{ page.title }}
+            {% if page.subtitle %}
+              <small>{{ page.subtitle }}</small>
+            {% endif %}
+          </h1>
+        </div>
+
+        {% if page.lead %}
+        <div class="lead">
+          <p>{{ page.lead }}</p>
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+      </div>
+
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/history.js" type="module"></script>
+
+  </body>
+</html>
