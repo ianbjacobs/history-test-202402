@@ -25,7 +25,7 @@
 		"chair": [
 		    {
 				"start": "2023-09-07",
- 			        "type": "audit committee"
+ 			        "type": "audit-committee"
 			}
 		]
 	},
@@ -40,7 +40,7 @@
 		"chair": [
 		    {
 			        "start": "2022-10-01",
- 			        "type": "governance committee"
+ 			        "type": "governance-committee"
 			}
 		]
 	},
@@ -62,11 +62,11 @@
 		    {
 			        "start": "2022-10-01",
  			        "end": "2024-01-18",
- 			        "type": "governance committee"
+ 			        "type": "governance-committee"
 		    },
 		    {
 			        "start": "2024-01-18",
- 			        "type": "board development committee"
+ 			        "type": "board-development-committee"
 		    }
 		]
 	},
@@ -81,7 +81,7 @@
 		"chair": [
 		    {
 			        "start": "2022-10-01",
- 			        "type": "finance committee"
+ 			        "type": "finance-committee"
 			}
 		]
    	},
@@ -96,7 +96,7 @@
 		"chair": [
 		    {
 				"start": "2022-10-01",
- 			        "type": "personnel committee"
+ 			        "type": "personnel-committee"
 			}
 		]
 	},
@@ -120,7 +120,7 @@
 		"chair": [
 		    {
 		                "start": "2022-10-01",
- 			        "type": "personnel committee"
+ 			        "type": "personnel-committee"
 			}
 		]
 	},
@@ -153,7 +153,7 @@
 		"chair": [
 		    {
 			        "start": "2022-11-17",
- 			        "type": "finance committee"
+ 			        "type": "finance-committee"
 			}
 		],
 		"officer": [

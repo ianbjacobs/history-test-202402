@@ -99,20 +99,28 @@
 	border-radius: 1px;
 }
 
-.term.appointed, .term.secretary, chair.finance {
+.term.appointed, .term.secretary, term.finance-committee {
 	background-color: hsl(195 70% 60%);
 }
 
-.term.elected, .term.treasurer, chair.board {
+.term.elected, .term.treasurer, term.board {
 	background-color: hsl(80 60% 45%);
 }
 
-.term.partner, chair.audit, chair.governance {
+.term.partner, chair.audit, term.governance-committee {
 	background-color: hsl(308, 100%, 47%);
 }
 
-.term.permanent, .term.president {
+.term.permanent, .term.president, .term.personnel-committee {
 	background-color: hsl(217, 42%, 53%);
+}
+
+.term.audit-committee {
+	background-color: hsl(57, 72%, 75%);
+}
+
+.term.board-development-committee {
+	background-color: hsl(275, 41%, 56%);
 }
 
 
