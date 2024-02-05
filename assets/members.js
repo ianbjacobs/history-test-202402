@@ -60,12 +60,12 @@ if (container) {
 
 // Format Officers
 
-for (let officer of members.filter(x => x.hasOwnProperty('officer'))) {
+for (let member of members.filter(x => x.hasOwnProperty('officer'))) {
 	html += `<tr>
-	<th class="name" scope="row">${officer.name}</th>
+	<th class="name" scope="row">${member.name}</th>
 	<td class="officers">`;
 
-	for (let office of officer.office) {
+	for (let officer of member.officer) {
 		let [sy, sm, sd] = officer.start.split("-");
 		let [ey, em, ed] = officer.end? officer.end.split("-") : ["", ""];
 		let readableStart = dateFormat.format(new Date(officer.start));
