@@ -13,7 +13,7 @@ function formatRows (members, list, subprop) {
 	<th class="name" scope="row">${member.name}}</th>
 	<td class="terms">`;
 	
-	for (let term of member[$subprop]) {
+	for (let term of member[subprop]) {
 	    let [sy, sm, sd] = term.start.split("-");
 	    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
 	    let readableStart = dateFormat.format(new Date(term.start));
