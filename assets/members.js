@@ -8,7 +8,7 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 // Format table of directors
 
 function formatRows (list, subprop) {
-    for (let member of members.filter((x) => x.hasOwnProperty(subprop))) {
+    for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
@@ -28,7 +28,7 @@ function formatRows (list, subprop) {
 	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
-                "(${term.type}) "
+                (${term.type})
 		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
 		</div>`;
 	}
