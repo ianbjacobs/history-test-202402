@@ -16,7 +16,7 @@
 	}
 }
 
-.terms {
+.terms, .officers {
 	position: relative;
 }
 
@@ -65,12 +65,12 @@
 	width: 17em;
 }
 
-#membersList td.terms > div {
+#membersList td.terms > div, #officersList td.officers > div {
 	display: grid;
 	grid-template-columns: repeat(calc(var(--years) + 1), 1fr);
 }
 
-.term {
+.term, .officer {
 	--_sy: calc(var(--sy) - 2022);
 	--_ey: calc(var(--ey) - 2022);
 	--_sm: calc(var(--sm) - 1);
@@ -112,18 +112,6 @@
 
 .term.permanent {
 	background-color: white;
-}
-
-.term.staff-contact {
-	background-color: hsl(350 40% 70%);
-}
-
-.term.staff-officer {
-	background-color: hsl(50 100% 47%);
-}
-
-.term.abliaison {
-	background-color: hsl(27, 100%, 47%);
 }
 
 .term.resigned {

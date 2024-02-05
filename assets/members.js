@@ -1,9 +1,15 @@
 let response = await fetch("members.json");
 let members = await response.json();
 let list = membersList;
+let officers = officersList;
+let chairs = chairsList;
+let liaisons = liaisonsList;
 let maxYear = 2022;
 let html = "";
 let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
+
+
+// Format table of directors
 
 for (let member of members) {
 	html += `<tr>
@@ -23,7 +29,7 @@ for (let member of members) {
 		let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
 
 		html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
-		title="${term.type}, ${term.officer? term.officer + ", " : ""} ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
+		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
 		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
 		</div>`;
@@ -51,6 +57,57 @@ if (container) {
 		list.style.setProperty("--container-width", rect.width + "px");
 	}).observe(container);
 }
+
+// Format chairs
+
+for (let member of members) {
+	html += `<tr>
+	<th class="name" scope="row">${member.name}</th>
+	<td class="officers">`;
+
+	for (let officer of member.officer) {
+		let [sy, sm, sd] = officer.start.split("-");
+		let [ey, em, ed] = officer.end? officer.end.split("-") : ["", ""];
+		let readableStart = dateFormat.format(new Date(officer.start));
+		let readableEnd = officer.end? dateFormat.format(new Date(officer.end)) : "present";
+
+		if (ey) {
+			maxYear = Math.max(maxYear, parseInt(ey));
+		}
+
+		let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
+
+	    html += `<div class="officer" 
+		title="${officer.office}, ${readableStart} – ${readableEnd} 
+		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
+		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
+		</div>`;
+	}
+
+	html += `</td></tr>`;
+}
+
+officers.insertAdjacentHTML("beforeend", html);
+
+let years = maxYear - 2022 + 1;
+officers.style.setProperty("--years", years);
+
+let theadRow = $$("thead tr", officers)[0];
+for (let i = 1; i <= years; i++) {
+	theadRow.insertAdjacentHTML("beforeend", `<th>${2021 + i}</th>`);
+}
+
+$$("td.officers", officers).forEach(th => th.colSpan = years);
+
+let container = officers.closest(".container");
+if (container) {
+	new ResizeObserver(_ => {
+		let rect = container.getBoundingClientRect();
+		officers.style.setProperty("--container-width", rect.width + "px");
+	}).observe(container);
+}
+
+
 
 function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));

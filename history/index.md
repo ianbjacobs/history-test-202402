@@ -8,7 +8,39 @@ This is a timeline of W3C Board Directors, Officers, AB Liaisons and their terms
 The data was pieced together from various [references](#references),
 which are listed below, but may still contain inaccuracies.
 
+## Directors
+
 <table id="membersList">
+	<thead class="years">
+		<tr>
+			<th>Name</th>
+		</tr>
+	</thead>
+</table>
+
+## Chairs
+
+<table id="chairsList">
+	<thead class="years">
+		<tr>
+			<th>Name</th>
+		</tr>
+	</thead>
+</table>
+
+## Officers
+
+<table id="officersList">
+	<thead class="years">
+		<tr>
+			<th>Name</th>
+		</tr>
+	</thead>
+</table>
+
+## AB Liaisons
+
+<table id="liaisonsList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>

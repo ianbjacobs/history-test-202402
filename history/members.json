@@ -4,8 +4,13 @@
 		"term": [
 			{
 				"start": "2022-10-01",
-                                "type": "elected",
-   			        "chair": true
+                                "type": "elected"
+			}
+		],
+		"chair": [
+		    {
+				"start": "2022-10-01",
+ 			        "of": "board"
 			}
 		]
 	},
@@ -16,6 +21,12 @@
 				"start": "2022-10-01",
                                 "type": "elected"
 			}
+		],
+		"chair": [
+		    {
+				"start": "2023-09-07",
+ 			        "of": "audit committee"
+			}
 		]
 	},
 	{
@@ -25,6 +36,12 @@
 				"start": "2022-10-01",
                                 "type": "elected"
 			}
+		],
+		"chair": [
+		    {
+			        "start": "2022-10-01",
+ 			        "of": "governance committee"
+			}
 		]
 	},
 	{
@@ -32,8 +49,26 @@
 		"term": [
 			{
 				"start": "2022-10-01",
-                                "type": "elected",
-				"officer": "secretary"
+                                "type": "elected"
+			}
+		],
+		"officer": [
+		    {
+			        "start": "2023-01-01",
+                                "office": "secretary"
+		    }
+		],
+		"chair": [
+		    {
+			        "start": "2022-10-01",
+ 			        "end": "2024-01-18",
+ 			        "of": "governance committee"
+			}
+		],
+		"chair": [
+		    {
+			        "start": "2024-01-18",
+ 			        "of": "board development committee"
 			}
 		]
 	},
@@ -44,14 +79,26 @@
 				"start": "2022-10-01",
                                 "type": "elected"
 			}
+		],
+		"chair": [
+		    {
+			        "start": "2022-10-01",
+ 			        "of": "finance committee"
+			}
 		]
-	},
+   	},
 	{
 		"name": "Léonie Watson",
 		"term": [
 			{
 				"start": "2022-10-01",
                                 "type": "elected"
+			}
+		],
+		"chair": [
+		    {
+				"start": "2022-10-01",
+ 			        "of": "personnel committee"
 			}
 		]
 	},
@@ -70,6 +117,12 @@
 			{
 				"start": "2022-10-01",
                                 "type": "partner"
+			}
+		],
+		"chair": [
+		    {
+		                "start": "2022-10-01",
+ 			        "of": "personnel committee"
 			}
 		]
 	},
@@ -92,6 +145,27 @@
 		]
 	},
 	{
+		"name": "Gonzalo Camarillo",
+		"term": [
+			{
+				"start": "2022-11-17",
+                                "type": "appointed"
+			}
+		],
+		"chair": [
+		    {
+			        "start": "2022-11-17"
+ 			        "of": "finance committee"
+			}
+		],
+		"officer": [
+		    {
+				"end": "2024-01-18",
+                                "office": "treasurer"
+		    }
+		]
+	},
+	{
 		"name": "Tim Berners-Lee",
 		"term": [
 			{
@@ -102,102 +176,92 @@
 	},
 	{
 		"name": "William Judge",
-		"term": [
-			{
+		"officer": [
+		    {
 				"start": "2022-10-01",
 				"end": "2024-01-08",
-                                "type": "staff-officer",
-				"officer": "treasurer"
-			}
+                                "office": "treasurer"
+		    }
 		]
 	},
 	{
 		"name": "Jeffrey Jaffe",
-		"term": [
-			{
+		"officer": [
+		    {
 				"start": "2022-10-01",
 				"end": "2022-12-19",
-                                "type": "staff-officer",
-				"officer": "president"
-			}
+                                "office": "president"
+		    }
 		]
 	},
 	{
-		"name": "Ralph Swick",
-		"term": [
-			{
+	        "name": "Ralph Swick",
+		"officer": [
+		    {
 				"start": "2022-12-19",
 				"end": "2023-11-14",
-                                "type": "staff-officer",
-				"officer": "president"
-			}
+                                "office": "president"
+		    }
 		]
 	},
 	{
 		"name": "Seth Dobbs",
-		"term": [
-			{
+		"officer": [
+		    {
 				"start": "2023-11-14",
-                                "type": "staff-officer",
-				"officer": "president"
-			}
+                                "office": "president"
+		    }
 		]
 	},
 	{
 		"name": "Ian Jacobs",
-		"term": [
+		"support": [
 			{
-				"start": "2023-05-14",
-                                "type": "staff-contact"
+				"start": "2023-05-14"
 			}
 		]
 	},
 	{
 		"name": "Wendy Seltzer",
-		"term": [
-			{
+		"officer": [
+		    {
 				"start": "2022-10-01",
 				"end": "2022-12-31",
-				"type": "staff-officer",
-				"officer": "secretary"
-			}
+                                "office": "secretary"
+		    }
 		]
 	},
 	{
 		"name": "Florian Rivoal",
-		"term": [
+		"abliaison": [
 			{
 				"start": "2022-12-11",
-				"end": "2023-06-30",
-                                "type": "abliaison"
+				"end": "2023-06-30"
 			}
 		]
 	},
 	{
 		"name": "Heejin Chung",
-		"term": [
+		"abliaison": [
 			{
 				"start": "2022-12-11",
-				"end": "2023-06-30",
-                                "type": "abliaison"
+				"end": "2023-06-30"
 			}
 		]
 	},
 	{
 		"name": "Elika Etimad",
-		"term": [
+		"abliaison": [
 			{
-				"start": "2023-07-01",
-                                "type": "abliaison"
+				"start": "2023-07-01"
 			}
 		]
 	},
 	{
 		"name": "Tantek Çelik",
-		"term": [
+		"abliaison": [
 			{
-				"start": "2023-07-01",
-                                "type": "abliaison"
+				"start": "2023-07-01"
 			}
 		]
 	}
