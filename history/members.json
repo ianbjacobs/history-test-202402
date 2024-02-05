@@ -63,14 +63,12 @@
 			        "start": "2022-10-01",
  			        "end": "2024-01-18",
  			        "type": "governance committee"
-			}
-		],
-		"chair": [
+		    },
 		    {
 			        "start": "2024-01-18",
  			        "type": "board development committee"
-			}
-		]
+		    }
+		],
 	},
 	{
 		"name": "Eric Siow",
