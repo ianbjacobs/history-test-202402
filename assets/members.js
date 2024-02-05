@@ -5,7 +5,7 @@ let members = await response.json();
 
 function formatRows (list, subprop) {
     let html = "";
-    let maxYear = 2022;
+    let maxYear = new Date().getFullYear();
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
     for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
