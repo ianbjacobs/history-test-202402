@@ -10,7 +10,7 @@
 		"chair": [
 		    {
 				"start": "2022-10-01",
- 			        "of": "board"
+ 			        "type": "board"
 			}
 		]
 	},
@@ -25,7 +25,7 @@
 		"chair": [
 		    {
 				"start": "2023-09-07",
- 			        "of": "audit committee"
+ 			        "type": "audit committee"
 			}
 		]
 	},
@@ -40,7 +40,7 @@
 		"chair": [
 		    {
 			        "start": "2022-10-01",
- 			        "of": "governance committee"
+ 			        "type": "governance committee"
 			}
 		]
 	},
@@ -55,20 +55,20 @@
 		"officer": [
 		    {
 			        "start": "2023-01-01",
-                                "office": "secretary"
+                                "type": "secretary"
 		    }
 		],
 		"chair": [
 		    {
 			        "start": "2022-10-01",
  			        "end": "2024-01-18",
- 			        "of": "governance committee"
+ 			        "type": "governance committee"
 			}
 		],
 		"chair": [
 		    {
 			        "start": "2024-01-18",
- 			        "of": "board development committee"
+ 			        "type": "board development committee"
 			}
 		]
 	},
@@ -83,7 +83,7 @@
 		"chair": [
 		    {
 			        "start": "2022-10-01",
- 			        "of": "finance committee"
+ 			        "type": "finance committee"
 			}
 		]
    	},
@@ -98,7 +98,7 @@
 		"chair": [
 		    {
 				"start": "2022-10-01",
- 			        "of": "personnel committee"
+ 			        "type": "personnel committee"
 			}
 		]
 	},
@@ -122,7 +122,7 @@
 		"chair": [
 		    {
 		                "start": "2022-10-01",
- 			        "of": "personnel committee"
+ 			        "type": "personnel committee"
 			}
 		]
 	},
@@ -155,13 +155,13 @@
 		"chair": [
 		    {
 			        "start": "2022-11-17",
- 			        "of": "finance committee"
+ 			        "type": "finance committee"
 			}
 		],
 		"officer": [
 		    {
 				"start": "2024-01-18",
-                                "office": "treasurer"
+                                "type": "treasurer"
 		    }
 		]
 	},
@@ -180,7 +180,7 @@
 		    {
 				"start": "2022-10-01",
 				"end": "2024-01-08",
-                                "office": "treasurer"
+                                "type": "treasurer"
 		    }
 		]
 	},
@@ -190,7 +190,7 @@
 		    {
 				"start": "2022-10-01",
 				"end": "2022-12-19",
-                                "office": "president"
+                                "type": "president"
 		    }
 		]
 	},
@@ -200,7 +200,7 @@
 		    {
 				"start": "2022-12-19",
 				"end": "2023-11-14",
-                                "office": "president"
+                                "type": "president"
 		    }
 		]
 	},
@@ -209,7 +209,7 @@
 		"officer": [
 		    {
 				"start": "2023-11-14",
-                                "office": "president"
+                                "type": "president"
 		    }
 		]
 	},
@@ -227,7 +227,7 @@
 		    {
 				"start": "2022-10-01",
 				"end": "2022-12-31",
-                                "office": "secretary"
+                                "type": "secretary"
 		    }
 		]
 	},
