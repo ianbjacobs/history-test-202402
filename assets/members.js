@@ -58,14 +58,14 @@ if (container) {
 	}).observe(container);
 }
 
-// Format chairs
+// Format Officers
 
-for (let member of members) {
+for (let officer of officers) {
 	html += `<tr>
-	<th class="name" scope="row">${member.name}</th>
+	<th class="name" scope="row">${officer.name}</th>
 	<td class="officers">`;
 
-	for (let officer of member.officer) {
+	for (let office of officer.office) {
 		let [sy, sm, sd] = officer.start.split("-");
 		let [ey, em, ed] = officer.end? officer.end.split("-") : ["", ""];
 		let readableStart = dateFormat.format(new Date(officer.start));
