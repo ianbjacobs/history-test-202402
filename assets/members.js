@@ -8,7 +8,7 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 // Format table of directors
 
 function formatRows (list, subprop) {
-    for (let member of members.filter(x => x.hasOwnProperty(subprop))) {
+    for (let member of members.filter((x) => x.hasOwnProperty(subprop))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
