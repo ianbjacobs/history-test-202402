@@ -59,6 +59,6 @@ function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
 }
 
-formatRows("#" + membersList, 'term');
-formatRows("#" + officersList, 'officer');
+formatRows(membersList, 'term');
+formatRows(officersList, 'officer');
 
