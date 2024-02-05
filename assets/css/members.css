@@ -99,15 +99,15 @@
 	border-radius: 1px;
 }
 
-.term.appointed, .term.secretary, term.finance-committee {
+.term.appointed, .term.secretary, .term.finance-committee {
 	background-color: hsl(195 70% 60%);
 }
 
-.term.elected, .term.treasurer, term.board {
+.term.elected, .term.treasurer, .term.board {
 	background-color: hsl(80 60% 45%);
 }
 
-.term.partner, chair.audit, term.governance-committee {
+.term.partner, chair.audit, .term.governance-committee {
 	background-color: hsl(308, 100%, 47%);
 }
 
