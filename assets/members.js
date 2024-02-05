@@ -41,7 +41,7 @@ list.style.setProperty("--years", years);
 
 let theadRow = $$("thead tr", list)[0];
 for (let i = 1; i <= years; i++) {
-	theadRow.insertAdjacentHTML("beforeend", `<th>${2000 + i}</th>`);
+	theadRow.insertAdjacentHTML("beforeend", `<th>${2021 + i}</th>`);
 }
 
 $$("td.terms", list).forEach(th => th.colSpan = years);
