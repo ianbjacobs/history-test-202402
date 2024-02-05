@@ -12,26 +12,24 @@ function formatRows (list, subprop) {
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
 	
-	for (let terms of member[subprop]) {
-	    for (let term of terms) {
-		let [sy, sm, sd] = term.start.split("-");
-		let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
-		let readableStart = dateFormat.format(new Date(term.start));
-		let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
-		
-		if (ey) {
-		    maxYear = Math.max(maxYear, parseInt(ey));
-		}
-		
-		let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
-		
-		html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
+	for (let term of member[subprop]) {
+	    let [sy, sm, sd] = term.start.split("-");
+	    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
+	    let readableStart = dateFormat.format(new Date(term.start));
+	    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
+	    
+	    if (ey) {
+		maxYear = Math.max(maxYear, parseInt(ey));
+	    }
+	    
+	    let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
+	    
+	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
                 ${term.type ? "(" + term.type + ")" : ""}
 		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
 		</div>`;
-	    }
 	}
 	html += `</td></tr>`;
     }
