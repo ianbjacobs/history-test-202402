@@ -91,19 +91,19 @@ officers.insertAdjacentHTML("beforeend", html);
 
 officers.style.setProperty("--years", years);
 
-let theadRow = $$("thead tr", officers)[0];
+let theadRowOfficers = $$("thead tr", officers)[0];
 for (let i = 1; i <= years; i++) {
-	theadRow.insertAdjacentHTML("beforeend", `<th>${2021 + i}</th>`);
+	theadRowOfficers.insertAdjacentHTML("beforeend", `<th>${2021 + i}</th>`);
 }
 
 $$("td.officers", officers).forEach(th => th.colSpan = years);
 
-let container = officers.closest(".container");
-if (container) {
+let containerOfficers = officers.closest(".container");
+if (containerOfficers) {
 	new ResizeObserver(_ => {
-		let rect = container.getBoundingClientRect();
+		let rect = containerOfficers.getBoundingClientRect();
 		officers.style.setProperty("--container-width", rect.width + "px");
-	}).observe(container);
+	}).observe(containerOfficers);
 }
 
 
