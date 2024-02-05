@@ -60,7 +60,7 @@ if (container) {
 
 // Format Officers
 
-for (let officer of officers) {
+for (let officer of members.filter(x => x.hasOwnProperty('officer'))) {
 	html += `<tr>
 	<th class="name" scope="row">${officer.name}</th>
 	<td class="officers">`;
