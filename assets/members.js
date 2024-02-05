@@ -89,7 +89,6 @@ for (let member of members) {
 
 officers.insertAdjacentHTML("beforeend", html);
 
-let years = maxYear - 2022 + 1;
 officers.style.setProperty("--years", years);
 
 let theadRow = $$("thead tr", officers)[0];
