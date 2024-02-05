@@ -1,7 +1,5 @@
 let response = await fetch("members.json");
 let members = await response.json();
-let chairs = chairsList;
-let liaisons = liaisonsList;
 let maxYear = 2022;
 let html = "";
 let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
@@ -9,59 +7,35 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
 // Format table of directors
 
-function listDirectors (members, list)) {
-    let list = membersList;   
+function formatRows (members, list, subprop) {
     for (let member of members) {
 	html += `<tr>
-	<th class="name" scope="row">${member.name}</th>
+	<th class="name" scope="row">${member.name}}</th>
 	<td class="terms">`;
 	
-	for (let term of member.term) {
-	    formatTerm(term);
-	}
-	html += `</td></tr>`;
-    }
-    formatOtherTable(list);
-}
-
-
-function listOfficers (members, list) {
-    let list = officersList;
-    for (let member of members) {
-	html += `<tr>
-	<th class="name" scope="row">${member.name}</th>
-	<td class="officers">`;
-	
-	for (let officer of member.officer) {
-	    formatTerm(officer);
-	}
-	html += `</td></tr>`;
-    }
-    formatOtherTable(list);
-}
-
-function formatTerm (term) {
-    let [sy, sm, sd] = term.start.split("-");
-    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
-    let readableStart = dateFormat.format(new Date(term.start));
-    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
-    
-    if (ey) {
-	maxYear = Math.max(maxYear, parseInt(ey));
-    }
-    
-    let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
-    
-    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
+	for (let term of member[$subprop]) {
+	    let [sy, sm, sd] = term.start.split("-");
+	    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
+	    let readableStart = dateFormat.format(new Date(term.start));
+	    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
+	    
+	    if (ey) {
+		maxYear = Math.max(maxYear, parseInt(ey));
+	    }
+	    
+	    let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
+	    
+	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
 		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
 		</div>`;
-}
+	}
+	html += `</td></tr>`;
+    }
 
-function formatOtherTable(list) {
     list.insertAdjacentHTML("beforeend", html);
-
+    
     let years = maxYear - 2022 + 1;
     list.style.setProperty("--years", years);
     
@@ -85,6 +59,6 @@ function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
 }
 
-listDirectors(members.filter(x => x.hasOwnProperty('term')));
-listOfficers(members.filter(x => x.hasOwnProperty('officer')));
+formatRows(members.filter(x => x.hasOwnProperty('term')), membersList, 'term');
+listOfficers(members.filter(x => x.hasOwnProperty('officer')), officersList, 'officer');
 
