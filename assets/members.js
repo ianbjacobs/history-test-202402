@@ -15,8 +15,8 @@ function formatRows (list, subprop) {
 	for (let term of member[subprop]) {
 	    let [sy, sm, sd] = term.start.split("-");
 	    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
-	    let readableStart = dateFormat.format(new Date(term.start));
-	    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
+	    let readableStart = dateFormat.format(new Date(term.start + "T00:00:00"));
+	    let readableEnd = term.end? dateFormat.format(new Date(term.end + "T00:00:00")) : "present";
 	    
 	    if (ey) {
 		maxYear = Math.max(maxYear, parseInt(ey));
