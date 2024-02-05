@@ -1,13 +1,12 @@
 let response = await fetch("members.json");
 let members = await response.json();
-const maxYear = 2022;
-let html = "";
 let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
 
 // Format table of directors
 
-function formatRows (list, subprop) {
+function formatRows (list, subprop, maxYear) {
+    let html = "";
     for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
@@ -20,7 +19,7 @@ function formatRows (list, subprop) {
 	    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
 	    
 	    if (ey) {
-		maxYr = Math.max(maxYear, parseInt(ey));
+		maxYear = Math.max(maxYear, parseInt(ey));
 	    }
 	    
 	    let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
@@ -37,7 +36,7 @@ function formatRows (list, subprop) {
 
     list.insertAdjacentHTML("beforeend", html);
     
-    let years = maxYr - 2022 + 1;
+    let years = maxYear - 2022 + 1;
     list.style.setProperty("--years", years);
     
     let theadRow = $$("thead tr", list)[0];
@@ -60,6 +59,6 @@ function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
 }
 
-formatRows(membersList, 'term');
-formatRows(officersList, 'officer');
+formatRows(membersList, 'term', 2022);
+formatRows(officersList, 'officer', 2022);
 
