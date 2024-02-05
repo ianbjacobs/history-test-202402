@@ -11,7 +11,7 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
 // Format table of directors
 
-for (let member of members) {
+for (let member of members.filter(x => x.hasOwnProperty('term'))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
