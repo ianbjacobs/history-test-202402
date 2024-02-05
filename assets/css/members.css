@@ -99,21 +99,22 @@
 	border-radius: 1px;
 }
 
-.term.appointed, .term.secretary {
+.term.appointed, .term.secretary, chair.finance {
 	background-color: hsl(195 70% 60%);
 }
 
-.term.elected, .term.treasurer {
+.term.elected, .term.treasurer, chair.board {
 	background-color: hsl(80 60% 45%);
 }
 
-.term.partner {
+.term.partner, chair.audit, chair.governance {
 	background-color: hsl(308, 100%, 47%);
 }
 
 .term.permanent, .term.president {
 	background-color: hsl(217, 42%, 53%);
 }
+
 
 .term.resigned {
 	border-right: 3px solid hsl(0 80% 45%);
