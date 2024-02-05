@@ -5,7 +5,11 @@ let members = await response.json();
 
 function formatRows (list, subprop) {
     let html = "";
-    let maxYear = new Date().getFullYear();
+    let date = new Date();    
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();    
+    let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
     for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
@@ -24,7 +28,7 @@ function formatRows (list, subprop) {
 	    
 	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
-		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
+		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey? ey : year}; --em: ${em? em : month}; --ed: ${ed? ed : day}">
                 ${term.type ? "(" + term.type + ")" : ""}
 		${readableStart} - ${readableEnd}
 		</div>`;
