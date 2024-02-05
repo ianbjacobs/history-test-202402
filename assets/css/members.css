@@ -71,8 +71,8 @@
 }
 
 .term {
-	--_sy: calc(var(--sy) - 2001);
-	--_ey: calc(var(--ey) - 2001);
+	--_sy: calc(var(--sy) - 2022);
+	--_ey: calc(var(--ey) - 2022);
 	--_sm: calc(var(--sm) - 1);
 	--_em: calc(var(--em) - 1);
 	--start: calc(var(--day-fr) * var(--sd) + var(--month-fr) * var(--_sm) + var(--_sy) * var(--year-fr) );
