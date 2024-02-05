@@ -5,6 +5,8 @@ let maxYear = 2022;
 let html = "";
 let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
+document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="members.css">`)
+
 for (let member of members) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
