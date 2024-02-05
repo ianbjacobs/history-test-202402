@@ -60,5 +60,5 @@ function $$(selector, context = document) {
 }
 
 formatRows(members.filter(x => x.hasOwnProperty('term')), membersList, 'term');
-listOfficers(members.filter(x => x.hasOwnProperty('officer')), officersList, 'officer');
+formatRows(members.filter(x => x.hasOwnProperty('officer')), officersList, 'officer');
 
