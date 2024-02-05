@@ -1,4 +1,4 @@
-#membersList {
+.membersList {
 	position: relative;
 	--year-fr: calc(100% / var(--years));
 	--month-fr: calc(var(--year-fr) / 12);
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 1600px) {
-	#membersList thead th + th {
+	.membersList thead th + th {
 		writing-mode: vertical-lr;
 	}
 }
@@ -20,27 +20,27 @@
 	position: relative;
 }
 
-#membersList table {
+.membersList table {
 	position: relative;
 	table-layout: fixed;
 	border-spacing: 0;
 }
 
-#membersList tbody tr:nth-child(odd) {
+.membersList tbody tr:nth-child(odd) {
 	background: hsl(220 10% 97%);
 }
 
-#membersList tbody tr:hover {
+.membersList tbody tr:hover {
 	background: hsl(220 10% 93%);
 }
 
-#membersList thead th {
+.membersList thead th {
 	--padding: .3em;
 	padding: var(--padding);
 	word-break: break-all;
 }
 
-	#membersList thead th + th::before {
+	.membersList thead th + th::before {
 		content: "";
 		position: absolute;
 		margin-left: calc(-1 * var(--padding));
@@ -50,27 +50,27 @@
 		background: hsl(220 10% 50% / .3);
 	}
 
-#membersList th.name {
+.membersList th.name {
 	padding: .1em;
 	white-space: nowrap;
 	counter-increment: participant;
 }
 
-	#membersList th.name::before {
+	.membersList th.name::before {
 		content: counter(participant) ". ";
 		opacity: .5;
 	}
 
-#membersList th:first-child {
+.membersList th:first-child {
 	width: 17em;
 }
 
-#membersList td.terms > div, #officersList td.officers > div {
+.membersList td.terms > div {
 	display: grid;
 	grid-template-columns: repeat(calc(var(--years) + 1), 1fr);
 }
 
-.term, .officer {
+.term {
 	--_sy: calc(var(--sy) - 2022);
 	--_ey: calc(var(--ey) - 2022);
 	--_sm: calc(var(--sm) - 1);

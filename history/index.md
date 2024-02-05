@@ -10,7 +10,7 @@ which are listed below, but may still contain inaccuracies.
 
 ## Directors
 
-<table id="membersList">
+<table class="membersList" id="membersList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>
@@ -20,7 +20,7 @@ which are listed below, but may still contain inaccuracies.
 
 ## Chairs
 
-<table id="chairsList">
+<table class="membersList" id="chairsList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>
@@ -30,7 +30,7 @@ which are listed below, but may still contain inaccuracies.
 
 ## Officers
 
-<table id="officersList">
+<table class="membersList" id="officersList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>
@@ -40,7 +40,7 @@ which are listed below, but may still contain inaccuracies.
 
 ## AB Liaisons
 
-<table id="liaisonsList">
+<table class="membersList" id="liaisonsList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>

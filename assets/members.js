@@ -10,7 +10,7 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 function formatRows (members, list, subprop) {
     for (let member of members) {
 	html += `<tr>
-	<th class="name" scope="row">${member.name}}</th>
+	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
 	
 	for (let term of member[subprop]) {
