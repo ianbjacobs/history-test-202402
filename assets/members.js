@@ -5,8 +5,9 @@ let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
 // Format table of directors
 
-function formatRows (list, subprop, maxYear) {
+function formatRows (list, subprop) {
     let html = "";
+    let maxYear = 2022;
     for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
@@ -59,6 +60,6 @@ function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
 }
 
-formatRows(membersList, 'term', 2022);
-formatRows(officersList, 'officer', 2022);
+formatRows(membersList, 'term');
+formatRows(officersList, 'officer');
 
