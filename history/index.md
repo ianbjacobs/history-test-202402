@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: members
 title: W3C Board and Officers members over time
 lead: From 2022 to present
 ---
