@@ -27,7 +27,7 @@ function formatRows (list, subprop) {
 	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey}; --em: ${em}; --ed: ${ed}">
-                ${term.type? "(" term.type ")" : ""}
+                ${term.type ? "(" + term.type + ")" : ""}
 		${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}
 		</div>`;
 	}
