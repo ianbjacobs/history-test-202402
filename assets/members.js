@@ -1,6 +1,6 @@
 let response = await fetch("members.json");
 let members = await response.json();
-let maxYear = 2022;
+const maxYear = 2022;
 let html = "";
 let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
@@ -20,7 +20,7 @@ function formatRows (list, subprop) {
 	    let readableEnd = term.end? dateFormat.format(new Date(term.end)) : "present";
 	    
 	    if (ey) {
-		maxYear = Math.max(maxYear, parseInt(ey));
+		maxYr = Math.max(maxYear, parseInt(ey));
 	    }
 	    
 	    let readableRange = `${readableStart.replace("Feb 1, ", "")} – ${readableEnd.replace("Jan 31, ", "")}`
@@ -37,7 +37,7 @@ function formatRows (list, subprop) {
 
     list.insertAdjacentHTML("beforeend", html);
     
-    let years = maxYear - 2022 + 1;
+    let years = maxYr - 2022 + 1;
     list.style.setProperty("--years", years);
     
     let theadRow = $$("thead tr", list)[0];
