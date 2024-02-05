@@ -1,13 +1,12 @@
 let response = await fetch("members.json");
 let members = await response.json();
-let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
-
 
 // Format table of directors
 
 function formatRows (list, subprop) {
     let html = "";
     let maxYear = 2022;
+    let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
     for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
