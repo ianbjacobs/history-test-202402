@@ -18,7 +18,7 @@ which are listed below, but may still contain inaccuracies.
 	</thead>
 </table>
 
-## Chairs
+## Board and Committee Chairs
 
 <table class="ml" id="chairsList">
 	<thead class="years">
@@ -28,7 +28,7 @@ which are listed below, but may still contain inaccuracies.
 	</thead>
 </table>
 
-## Officers
+## Officers of the Corporation
 
 <table class="ml" id="officersList">
 	<thead class="years">
