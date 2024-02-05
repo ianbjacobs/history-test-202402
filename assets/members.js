@@ -35,7 +35,8 @@ function formatRows (list, subprop) {
     }
 
     list.insertAdjacentHTML("beforeend", html);
-    
+
+    // 2022 is the start year of the Board of Directors
     let years = maxYear - 2022 + 1;
     list.style.setProperty("--years", years);
     
@@ -61,4 +62,6 @@ function $$(selector, context = document) {
 
 formatRows(membersList, 'term');
 formatRows(officersList, 'officer');
+formatRows(chairsList, 'chair');
+formatRows(liaisonsList, 'abliaison');
 

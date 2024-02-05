@@ -54,6 +54,7 @@
 	padding: .1em;
 	white-space: nowrap;
 	counter-increment: participant;
+	text-align: left;
 }
 
 	.ml th.name::before {
@@ -98,11 +99,11 @@
 	border-radius: 1px;
 }
 
-.term.appointed {
+.term.appointed, .term.secretary {
 	background-color: hsl(195 70% 60%);
 }
 
-.term.elected {
+.term.elected, .term.treasurer {
 	background-color: hsl(80 60% 45%);
 }
 
@@ -110,8 +111,8 @@
 	background-color: hsl(308, 100%, 47%);
 }
 
-.term.permanent {
-	background-color: white;
+.term.permanent, .term.president {
+	background-color: hsl(217, 42%, 53%);
 }
 
 .term.resigned {
