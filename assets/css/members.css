@@ -94,31 +94,61 @@
 	border-radius: 1px;
 }
 
-.term.appointed, .term.secretary, .term.finance-committee {
-	background-color: hsl(195 70% 60%);
+/* Directors */
+
+.term.appointed {
+    background-color: hsl(0, 80%, 94%);
 }
 
-.term.elected, .term.treasurer, .term.board {
-	background-color: hsl(80 60% 45%);
+.term.elected {
+    background-color: hsl(255, 80%, 94%);
 }
 
-.term.partner, chair.audit, .term.governance-committee {
-	background-color: hsl(308, 100%, 47%);
+.term.partner {
+    background-color: hsl(188, 80%, 94%);
 }
 
-.term.permanent, .term.president, .term.personnel-committee {
-	background-color: hsl(217, 42%, 53%);
+/* Chairs */
+
+.term.board {
+    background-color: hsl(0, 80%, 86%);
+}
+
+.term.finance-committee {
+    background-color: hsl(255, 80%, 86%);
+}
+
+.term.governance-committee {
+    background-color: hsl(188, 80%, 86%);
+}
+
+.term.personnel-committee {
+    background-color: hsl(131, 80%, 86%);
 }
 
 .term.audit-committee {
-	background-color: hsl(57, 72%, 75%);
+    background-color: hsl(85, 80%, 86%);
 }
 
 .term.board-development-committee {
-	background-color: hsl(275, 41%, 56%);
+    background-color: hsl(24, 80%, 86%);
 }
 
+/* Officers */
+
+
+.term.secretary {
+    background-color: hsl(208, 80%, 68%);
+}
+
+.term.treasurer {
+    background-color: hsl(288, 80%, 68%);
+}
+
+.term.president {
+    background-color: hsl(255, 80%, 68%);
+}
 
 .term.resigned {
-	border-right: 3px solid hsl(0 80% 45%);
+    border-right: 3px solid hsl(0, 80%, 59%);
 }
