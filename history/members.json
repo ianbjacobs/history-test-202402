@@ -1,6 +1,15 @@
 [
 	{
-		"name": "David Singer",
+		"name": "Tim Berners-Lee",
+		"term": [
+			{
+				"start": "2022-10-01",
+                                "type": "permanent"
+			}
+		]
+	},
+	{
+	        "name": "David Singer",
 		"term": [
 			{
 				"start": "2022-10-01",
@@ -164,15 +173,6 @@
 		]
 	},
 	{
-		"name": "Tim Berners-Lee",
-		"term": [
-			{
-				"start": "2022-10-01",
-                                "type": "permanent"
-			}
-		]
-	},
-	{
 		"name": "William Judge",
 		"officer": [
 		    {
@@ -209,14 +209,6 @@
 				"start": "2023-11-14",
                                 "type": "president"
 		    }
-		]
-	},
-	{
-		"name": "Ian Jacobs",
-		"support": [
-			{
-				"start": "2023-05-14"
-			}
 		]
 	},
 	{
