@@ -97,7 +97,6 @@
 /* Directors */
 
 .term.appointed {
-    color: white;    
     background-color: hsl(288, 80%, 59%);
 }
 
@@ -140,6 +139,7 @@
 
 
 .term.secretary {
+    color: white;        
     background-color: hsl(208, 80%, 68%);
 }
 
