@@ -1,5 +1,4 @@
-let response = await fetch("members.json");
-let members = await response.json();
+let members = await  fetch("members.json").then(r => r.json());
 
 // Format table of directors
 
