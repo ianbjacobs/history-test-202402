@@ -11,7 +11,7 @@ function formatRows (list, subprop) {
     let year = date.getFullYear();    
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort((a, b) => new Date(b.start) - new Date(a.start)))
+    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort((a, b) => new Date(b.term.start) - new Date(a.term.start))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
@@ -33,9 +33,8 @@ function formatRows (list, subprop) {
 		${readableStart} - ${readableEnd}
 		</div>`;
 	}
-	html += `</td></tr>`;
+        html += `</td></tr>`;
     }
-
     list.insertAdjacentHTML("beforeend", html);
 
     // 2022 is the start year of the Board of Directors
