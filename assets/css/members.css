@@ -97,7 +97,7 @@
 /* Directors */
 
 .term.appointed {
-    background-color: hsl(288, 80%, 59%);
+    background-color: hsl(0, 80%, 77%);
 }
 
 .term.elected {
@@ -144,13 +144,11 @@
 }
 
 .term.treasurer {
-    color: white;    
-    background-color: hsl(288, 80%, 68%);
+    background-color: hsl(339, 80%, 86%);
 }
 
 .term.president {
-    color: white;    
-    background-color: hsl(255, 80%, 68%);
+    background-color: hsl(288, 80%, 77%);
 }
 
 .term.resigned {
