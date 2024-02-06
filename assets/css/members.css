@@ -82,7 +82,7 @@
 	grid-column-start: calc(1 + var(--_sy));
 	grid-column-end: calc(1 + var(--_ey));
 	box-sizing: border-box;
-	padding: 0 .4em;
+	padding: .4em;
 	font-size: 70%;
 	font-weight: bold;
 	color: white;
@@ -97,15 +97,15 @@
 /* Directors */
 
 .term.appointed {
-    background-color: hsl(0, 80%, 32%);
+    background-color: hsl(288, 80%, 59%);
 }
 
 .term.elected {
-    background-color: hsl(288, 80%, 32%);
+    background-color: hsl(230, 80%, 59%);
 }
 
 .term.partner {
-    background-color: hsl(131, 80%, 23%);
+    background-color: hsl(162, 80%, 59%);
 }
 
 /* Chairs */
