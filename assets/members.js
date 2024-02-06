@@ -11,7 +11,7 @@ function formatRows (list, subprop) {
     let year = date.getFullYear();    
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
+    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort(function(a,b){ return new Date(b.start) - new Date(a.start);}))
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
@@ -60,6 +60,10 @@ function formatRows (list, subprop) {
 
 function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
+}
+
+function compareDates (a, b) {
+    return new Date(b.date) - new Date(a.date);
 }
 
 formatRows(membersList, 'term');
