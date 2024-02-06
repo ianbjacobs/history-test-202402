@@ -8,6 +8,8 @@ This is a timeline of W3C Board Directors, Officers, AB Liaisons and their terms
 The data was pieced together from various [references](#references),
 which are listed below, but may still contain inaccuracies.
 
+In the tables below, successive terms held by the same person are displayed as continuous.
+
 ## Directors
 
 <table class="ml" id="membersList">

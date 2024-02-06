@@ -1,24 +1,15 @@
 [
 	{
-		"name": "Tim Berners-Lee",
-		"term": [
-			{
-				"start": "2022-10-01",
-                                "type": "permanent"
-			}
-		]
-	},
-	{
 	        "name": "David Singer",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
 		"chair": [
 		    {
-				"start": "2022-10-01",
+				"start": "2022-10-20",
  			        "type": "board"
 			}
 		]
@@ -27,28 +18,33 @@
 		"name": "Robin Berjon",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
-		"chair": [
+	    "chair": [
+		    {
+			        "start": "2022-10-20",
+			        "end": "2023-02-13",
+ 			        "type": "finance-committee"
+		    },
 		    {
 				"start": "2023-09-07",
  			        "type": "audit-committee"
-			}
+		    }
 		]
 	},
 	{
 		"name": "Koichi Moriyama",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
 		"chair": [
 		    {
-			        "start": "2022-10-01",
+			        "start": "2022-10-20",
  			        "type": "governance-committee"
 			}
 		]
@@ -57,7 +53,7 @@
 		"name": "Mark Nottingham",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
@@ -69,7 +65,7 @@
 		],
 		"chair": [
 		    {
-			        "start": "2022-10-01",
+			        "start": "2022-10-20",
  			        "end": "2024-01-18",
  			        "type": "governance-committee"
 		    },
@@ -83,13 +79,13 @@
 		"name": "Eric Siow",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
 		"chair": [
 		    {
-			        "start": "2022-10-01",
+			        "start": "2022-10-20",
  			        "type": "finance-committee"
 			}
 		]
@@ -98,13 +94,13 @@
 		"name": "Léonie Watson",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		],
 		"chair": [
 		    {
-				"start": "2022-10-01",
+				"start": "2022-10-20",
  			        "type": "personnel-committee"
 			}
 		]
@@ -113,7 +109,7 @@
 		"name": "Hongru (Judy) Zhu",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "elected"
 			}
 		]
@@ -122,13 +118,13 @@
 		"name": "Dominique Hazaël-Massieux",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "partner"
 			}
 		],
 		"chair": [
 		    {
-		                "start": "2022-10-01",
+		                "start": "2022-10-20",
  			        "type": "personnel-committee"
 			}
 		]
@@ -137,7 +133,7 @@
 		"name": "Jun Murai",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "partner"
 			}
 		]
@@ -146,7 +142,7 @@
 		"name": "Chunming Hu",
 		"term": [
 			{
-				"start": "2022-10-01",
+				"start": "2022-10-20",
                                 "type": "partner"
 			}
 		]
@@ -161,7 +157,7 @@
 		],
 		"chair": [
 		    {
-			        "start": "2022-11-17",
+			        "start": "2023-02-13",
  			        "type": "finance-committee"
 			}
 		],
@@ -176,7 +172,7 @@
 		"name": "William Judge",
 		"officer": [
 		    {
-				"start": "2022-10-01",
+				"start": "2022-10-20",
 				"end": "2024-01-08",
                                 "type": "treasurer"
 		    }
@@ -186,7 +182,7 @@
 		"name": "Jeffrey Jaffe",
 		"officer": [
 		    {
-				"start": "2022-10-01",
+				"start": "2022-10-20",
 				"end": "2022-12-19",
                                 "type": "president"
 		    }
@@ -196,7 +192,7 @@
 	        "name": "Ralph Swick",
 		"officer": [
 		    {
-				"start": "2022-12-19",
+				"start": "2022-11-03",
 				"end": "2023-11-14",
                                 "type": "president"
 		    }
@@ -206,7 +202,7 @@
 		"name": "Seth Dobbs",
 		"officer": [
 		    {
-				"start": "2023-11-14",
+				"start": "2023-11-13",
                                 "type": "president"
 		    }
 		]
@@ -215,7 +211,7 @@
 		"name": "Wendy Seltzer",
 		"officer": [
 		    {
-				"start": "2022-10-01",
+				"start": "2022-10-20",
 				"end": "2022-12-31",
                                 "type": "secretary"
 		    }
