@@ -82,7 +82,7 @@
 	grid-column-start: calc(1 + var(--_sy));
 	grid-column-end: calc(1 + var(--_ey));
 	box-sizing: border-box;
-	padding: 0 .3em;
+	padding: 0 .4em;
 	font-size: 70%;
 	font-weight: bold;
 	color: white;
@@ -97,49 +97,46 @@
 /* Directors */
 
 .term.appointed {
-    color: #aaa;
-    background-color: hsl(0, 80%, 94%);
+    background-color: hsl(0, 80%, 32%);
 }
 
 .term.elected {
-    color: #aaa;
-    background-color: hsl(255, 80%, 94%);
+    background-color: hsl(288, 80%, 32%);
 }
 
 .term.partner {
-    color: #aaa;
-    background-color: hsl(188, 80%, 94%);
+    background-color: hsl(131, 80%, 23%);
 }
 
 /* Chairs */
 
 .term.board {
-    color: #aaa;    
+    color: black;    
     background-color: hsl(0, 80%, 86%);
 }
 
 .term.finance-committee {
-    color: #aaa;    
+    color: black;    
     background-color: hsl(255, 80%, 86%);
 }
 
 .term.governance-committee {
-    color: #aaa;    
+    color: black;    
     background-color: hsl(188, 80%, 86%);
 }
 
 .term.personnel-committee {
-    color: #aaa;    
+    color: black;    
     background-color: hsl(131, 80%, 86%);
 }
 
 .term.audit-committee {
-        color: #aaa;
+        color: black;
     background-color: hsl(85, 80%, 86%);
 }
 
 .term.board-development-committee {
-    color: #aaa;    
+    color: black;    
     background-color: hsl(24, 80%, 86%);
 }
 
