@@ -85,7 +85,7 @@
 	padding: .4em;
 	font-size: 70%;
 	font-weight: bold;
-	color: white;
+	color: black;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -111,32 +111,26 @@
 /* Chairs */
 
 .term.board {
-    color: black;    
     background-color: hsl(0, 80%, 86%);
 }
 
 .term.finance-committee {
-    color: black;    
     background-color: hsl(255, 80%, 86%);
 }
 
 .term.governance-committee {
-    color: black;    
     background-color: hsl(188, 80%, 86%);
 }
 
 .term.personnel-committee {
-    color: black;    
     background-color: hsl(131, 80%, 86%);
 }
 
 .term.audit-committee {
-        color: black;
     background-color: hsl(85, 80%, 86%);
 }
 
 .term.board-development-committee {
-    color: black;    
     background-color: hsl(39, 80%, 77%);
 }
 
@@ -157,4 +151,11 @@
 
 .term.resigned {
     border-right: 3px solid hsl(0, 80%, 59%);
+}
+
+
+/* Liaisons */
+
+.term.ab-liaison {
+    background-color: hsl(220 10% 70%) ;
 }
