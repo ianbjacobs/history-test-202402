@@ -2,6 +2,7 @@
 layout: members
 title: W3C Board and Officers members over time
 lead: From 2022 to present
+script: ../assets/members.js
 ---
 
 This is a timeline of W3C Board Directors, Officers, AB Liaisons and their terms, from the initial group in 2022 to the present.
@@ -56,3 +57,5 @@ In the tables below, successive terms held by the same person are displayed as c
 - [Dr. Jeffrey Jaffe steps down as W3C CEO; Ralph Swick appointed Interim CEO](https://www.w3.org/news/2022/dr-jeffrey-jaffe-steps-down-as-w3c-ceo-ralph-swick-appointed-interim-ceo/)
 - [W3C announces Seth Dobbs as next CEO](https://www.w3.org/news/2023/w3c-announces-seth-dobbs-as-ceo/)
 - Board of Directors elects Gonzalo Camarillo to the Board on 2022-11-17 *(Member-only)* announcement.
+
+<script src="{{ script }}"></script>
