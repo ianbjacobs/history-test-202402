@@ -4,9 +4,8 @@ title: W3C Board and Officers members over time
 lead: From 2022 to present
 ---
 
-This is a timeline of W3C Board Directors, Officers, AB Liaisons and their terms, from the initial group in 2022 to the present.
-The [data](members.json) was pieced together from various [references](#references),
-which are listed below, but may still contain inaccuracies.
+This is a timeline of W3C Board Directors, Officers, AB Liaisons and their terms, from the initial group in 2022 to the [present](https://www.w3.org/groups/other/board/participants/).
+The [data](members.json) was pieced together from various [references](#references), which are listed below, but may still contain inaccuracies.
 
 In the tables below, successive terms held by the same person are displayed as continuous.
 
