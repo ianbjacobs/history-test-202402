@@ -58,3 +58,5 @@ In the tables below, successive terms held by the same person are displayed as c
 - Board of Directors elects Gonzalo Camarillo to the Board on 2022-11-17 *(Member-only)* announcement.
 
 <script src="../assets/members.js" type="module"></script>
+<script src="../assets/jquery.min.js" type="module"></script>
+<script src="../assets/bootstrap.min.js" type="module"></script>

@@ -60,6 +60,7 @@ function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
 }
 
+document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="../assets/css/bootstrap.min.css">`)
 document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="../assets/css/members.css">`)
 formatRows(membersList, 'term');
 formatRows(officersList, 'officer');
