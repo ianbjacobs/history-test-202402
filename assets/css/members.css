@@ -10,12 +10,6 @@
 	margin-left: calc(-1 * (47vw - var(--container-width) / 2));
 }
 
-@media (max-width: 3200px) {
-	.ml thead th + th {
-		writing-mode: vertical-lr;
-	}
-}
-
 .terms {
 	position: relative;
 }
