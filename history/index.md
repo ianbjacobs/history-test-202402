@@ -19,9 +19,9 @@ In the tables below, successive terms held by the same person are displayed as c
 	</thead>
 </table>
 
-## Board and Committee Chairs
+## Officers of the Corporation
 
-<table class="ml" id="chairsList">
+<table class="ml" id="officersList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>
@@ -29,9 +29,9 @@ In the tables below, successive terms held by the same person are displayed as c
 	</thead>
 </table>
 
-## Officers of the Corporation
+## Board and Committee Chairs
 
-<table class="ml" id="officersList">
+<table class="ml" id="chairsList">
 	<thead class="years">
 		<tr>
 			<th>Name</th>
