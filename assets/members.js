@@ -9,8 +9,9 @@ function formatRows (list, subprop, subtype) {
     let month = date.getMonth() + 1;
     let year = date.getFullYear();    
     let maxYear = year;
-    let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop) && x[subprop].some(t => t.type == subtype)).sort((a,b) => a[subprop][0].start.localeCompare(b[subprop][0].start))) {
+    let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
+
+    for (let member of members.filter(x => Object.hasOwn(x,subprop) && x[subprop].some(t => t.type == subtype)).sort((a,b) => a[subprop][0].start == b[subprop][0].start ? a.name.split(' ').pop().localeCompare(b.name.split(' ').pop()) : a[subprop][0].start.localeCompare(b[subprop][0].start))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
