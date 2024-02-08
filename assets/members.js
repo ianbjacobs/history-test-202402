@@ -11,7 +11,9 @@ function formatRows (list, subprop, subtype) {
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
-    for (let member of members.filter(x => Object.hasOwn(x,subprop) && x[subprop].some(t => t.type == subtype)).sort((a,b) => a[subprop][0].start == b[subprop][0].start ? a.name.split(' ').pop().localeCompare(b.name.split(' ').pop()) : a[subprop][0].start.localeCompare(b[subprop][0].start))) {
+    // Look at the list entries that correspond to the group (e.g., "chairs" or "directors") and the subclass of that group (e.g., "finance committee" or "governance committee"). Within that list, sort the entries first by start date. For all entries with the same start date, sort by last name.
+
+    for (let member of members.filter(x => Object.hasOwn(x,subprop) && x[subprop].some(t => t.type == subtype)).sort((a,b) => a[subprop][0].start == b[subprop][0].start ? sortByNameValue(a,b) : a[subprop][0].start.localeCompare(b[subprop][0].start))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
@@ -54,6 +56,14 @@ function formatRows (list, subprop, subtype) {
 	    list.style.setProperty("--container-width", rect.width + "px");
 	}).observe(container);
     }
+}
+
+// For the purposes of sorting, takes two objects. Each object must have a "name" property and may have a "sortby" property. If sortby is present use it, otherwise default to approach that splits the name into parts and assumes the last part is for sorting.
+
+function sortByNameValue (a, b) {
+    let aname = a.sortname ? a.sortname : a.name.split(' ').pop();
+    let bname = b.sortname ? b.sortname : b.name.split(' ').pop();
+    return aname.localeCompare(bname);
 }
 
 function $$(selector, context = document) {
