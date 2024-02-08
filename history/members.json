@@ -212,7 +212,7 @@
 		"abliaison": [
 			{
 				"start": "2022-12-11",
-			        "end": "2023-06-30",
+			        "end": "2023-08-15",
 			        "type": "ab-liaison"
 			}
 		]
@@ -231,7 +231,7 @@
 		"name": "Elika Etimad",
 		"abliaison": [
 			{
-			    "start": "2023-07-01",
+			    "start": "2023-08-16",
 			        "type": "ab-liaison"			    
 			}
 		]
@@ -240,7 +240,7 @@
 		"name": "Tantek Çelik",
 		"abliaison": [
 			{
-			    "start": "2023-07-01",
+			    "start": "2023-08-16",
 			        "type": "ab-liaison"			    
 			}
 		]
