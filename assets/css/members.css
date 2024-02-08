@@ -8,16 +8,21 @@
 	counter-reset: participant;
 
 	margin-left: calc(-1 * (47vw - var(--container-width) / 2));
+
+	position: relative;
+	table-layout: fixed;
+	border-spacing: 0;
+	margin-bottom: 2em;
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2em;
 }
 
 .terms {
 	position: relative;
-}
-
-.ml table {
-	position: relative;
-	table-layout: fixed;
-	border-spacing: 0;
 }
 
 .ml tbody tr:nth-child(odd) {
@@ -34,21 +39,22 @@
 	word-break: break-all;
 }
 
-	.ml thead th + th::before {
-		content: "";
-		position: absolute;
-		margin-left: calc(-1 * var(--padding));
-		top: 0;
-		bottom: 0;
-		width: 1px;
-		background: hsl(220 10% 50% / .3);
-	}
+.ml thead th + th::before {
+	content: "";
+	position: absolute;
+	margin-left: calc(-1 * var(--padding));
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: hsl(220 10% 50% / .3);
+}
 
 .ml th.name {
 	padding: .1em;
 	white-space: nowrap;
 	counter-increment: participant;
 	text-align: left;
+	font-weight: normal;
 }
 
 .ml th:first-child {

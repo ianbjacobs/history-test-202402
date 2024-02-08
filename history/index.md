@@ -10,41 +10,137 @@ The [data](members.json) was pieced together from various [references](#referenc
 In the tables below, successive terms held by the same person are displayed as continuous.
 
 ## Directors
+### Elected Directors
 
-<table class="ml" id="membersList">
-	<thead class="years">
+<table class="ml" id="electedDirectors">
+    <thead>
+      <tr>
+	<th></th>
+      </tr>
+    </thead>
+  </table>
+
+### Partner Directors
+
+<table class="ml" id="partnerDirectors">
+	<thead>
 		<tr>
-			<th>Name</th>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Appointed Directors
+
+<table class="ml" id="appointedDirectors">
+	<thead>
+		<tr>
+			<th></th>
 		</tr>
 	</thead>
 </table>
 
 ## Officers of the Corporation
 
-<table class="ml" id="officersList">
-	<thead class="years">
+### President
+
+<table class="ml" id="presidentOfficers">
+	<thead>
 		<tr>
-			<th>Name</th>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Treasurer
+
+<table class="ml" id="treasurerOfficers">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Secretary
+
+<table class="ml" id="secretaryOfficers">
+	<thead>
+		<tr>
+			<th></th>
 		</tr>
 	</thead>
 </table>
 
 ## Board and Committee Chairs
 
-<table class="ml" id="chairsList">
-	<thead class="years">
+### Board Chairs
+
+<table class="ml" id="boardChair">
+	<thead>
 		<tr>
-			<th>Name</th>
+			<th></th>
 		</tr>
 	</thead>
 </table>
 
+### Governance Committee Chairs
+
+<table class="ml" id="governanceCommittee">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Finance Committee Chairs
+
+<table class="ml" id="financeCommittee">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Personnel Committee Chairs
+
+<table class="ml" id="personnelCommittee">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Audit Committee Chairs
+
+<table class="ml" id="auditCommittee">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+### Board Development Committee Chairs
+
+<table class="ml" id="boardDevelopmentCommittee">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+</table>
+
+
 ## AB Liaisons
 
 <table class="ml" id="liaisonsList">
-	<thead class="years">
+	<thead>
 		<tr>
-			<th>Name</th>
+			<th></th>
 		</tr>
 	</thead>
 </table>

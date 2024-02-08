@@ -2,7 +2,7 @@ let members = await  fetch("members.json").then(r => r.json());
 
 // Format table of directors
 
-function formatRows (list, subprop) {
+function formatRows (list, subprop, subtype) {
     let html = "";
     let date = new Date();    
     let day = date.getDate();
@@ -10,12 +10,12 @@ function formatRows (list, subprop) {
     let year = date.getFullYear();    
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop))) {
+    for (let member of members.filter(x => Object.hasOwn(x,subprop) && x[subprop].some(t => t.type == subtype)).sort((a,b) => a[subprop][0].start.localeCompare(b[subprop][0].start))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
 	
-	for (let term of member[subprop]) {
+	for (let term of member[subprop].filter(t => t.type == subtype)) {
 	    let [sy, sm, sd] = term.start.split("-");
 	    let [ey, em, ed] = term.end? term.end.split("-") : ["", ""];
 	    let readableStart = dateFormat.format(new Date(term.start + "T00:00:00"));
@@ -28,7 +28,6 @@ function formatRows (list, subprop) {
 	    html += `<div class="term ${term.type} ${term.resigned? "resigned" : ""}"
 		title="${term.type}, ${readableStart} – ${readableEnd} ${term.resigned? " (resigned)" : ""}" ${term.note ?? ""}
 		style="--sy: ${sy}; --sm: ${sm}; --sd: ${sd}; --ey: ${ey? ey : year}; --em: ${em? em : month}; --ed: ${ed? ed : day}">
-                ${term.type ? "(" + term.type + ")" : ""}
 		${readableStart} - ${readableEnd}
 		</div>`;
 	}
@@ -62,8 +61,28 @@ function $$(selector, context = document) {
 
 document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">`)
 document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="../assets/css/members.css">`)
-formatRows(membersList, 'term');
-formatRows(officersList, 'officer');
-formatRows(chairsList, 'chair');
-formatRows(liaisonsList, 'abliaison');
+
+// Directors
+formatRows(electedDirectors, 'term', 'elected');
+formatRows(partnerDirectors, 'term', 'partner');
+formatRows(appointedDirectors, 'term', 'appointed');
+
+// Officers
+
+formatRows(presidentOfficers, 'officer', 'president');
+formatRows(treasurerOfficers, 'officer', 'secretary');
+formatRows(secretaryOfficers, 'officer', 'treasurer');
+
+// Chairs of Board and Committees
+
+formatRows(boardChair, 'chair', 'board');
+formatRows(governanceCommittee, 'chair', 'governance-committee');
+formatRows(financeCommittee, 'chair', 'finance-committee');
+formatRows(personnelCommittee, 'chair', 'personnel-committee');
+formatRows(auditCommittee, 'chair', 'audit-committee');
+formatRows(boardDevelopmentCommittee, 'chair', 'board-development-committee');
+
+// AB Liaisons
+
+formatRows(liaisonsList, 'abliaison', 'ab-liaison');
 
