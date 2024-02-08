@@ -4,11 +4,10 @@
 	--month-fr: calc(var(--year-fr) / 12);
 	--day-fr: calc(var(--month-fr) / 31);
 
-	width: 94vw;
+	width: 70vw;
 	counter-reset: participant;
 
-	margin-left: calc(-1 * (47vw - var(--container-width) / 2));
-
+	margin-left: calc(-1 * (35vw - var(--container-width) / 2));
 	position: relative;
 	table-layout: fixed;
 	border-spacing: 0;
