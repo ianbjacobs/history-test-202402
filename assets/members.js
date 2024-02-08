@@ -10,7 +10,7 @@ function formatRows (list, subprop) {
     let year = date.getFullYear();    
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort(sortByStartDate)) {
+    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort((a, b) => return new Date(a[subprop].date) - new Date(b[subprop].date))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
@@ -58,10 +58,6 @@ function formatRows (list, subprop) {
 
 function $$(selector, context = document) {
 	return Array.from(context.querySelectorAll(selector));
-}
-
-function sortByStartDate (a, b) {
-    return new Date(a.start) - new Date(b.start);
 }
 
 document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">`)
