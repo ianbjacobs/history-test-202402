@@ -10,7 +10,7 @@ function formatRows (list, subprop) {
     let year = date.getFullYear();    
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});    
-    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort((a, b) => new Date(a[subprop].date) - new Date(b[subprop].date))) {
+    for (let member of members.filter(x => Object.hasOwn(x,subprop)).sort((a, b) => new Date(a[subprop].start) - new Date(b[subprop].start))) {
 	html += `<tr>
 	<th class="name" scope="row">${member.name}</th>
 	<td class="terms">`;
