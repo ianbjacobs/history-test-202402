@@ -7,7 +7,8 @@ function formatRows (list, subprop, subtype) {
     let date = new Date();    
     let day = date.getDate();
     let month = date.getMonth() + 1;
-    let year = date.getFullYear();    
+    let year = date.getFullYear();
+    let startYear = 2022; // the start of the Board of Directors
     let maxYear = year;
     let dateFormat = new Intl.DateTimeFormat("en-US", {dateStyle: "medium"});
 
@@ -38,13 +39,12 @@ function formatRows (list, subprop, subtype) {
     }
     list.insertAdjacentHTML("beforeend", html);
 
-    // 2022 is the start year of the Board of Directors
-    let years = maxYear - 2022 + 1;
+    let years = maxYear - startYear + 1;
     list.style.setProperty("--years", years);
     
     let theadRow = $$("thead tr", list)[0];
     for (let i = 1; i <= years; i++) {
-	theadRow.insertAdjacentHTML("beforeend", `<th>${2021 + i}</th>`);
+	theadRow.insertAdjacentHTML("beforeend", `<th>${startYear - 1 + i}</th>`);
     }
     
     $$("td.terms", list).forEach(th => th.colSpan = years);
