@@ -1,1 +1,1 @@
-@ianbjacobs, @mnot, @dwsinger
+@ianbjacobs
