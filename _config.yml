@@ -1,7 +1,1 @@
 theme: jekyll-theme-minimal
-
-on:
-  push:
-    paths:
-      - 'assets/*'
-
