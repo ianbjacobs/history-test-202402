@@ -3,5 +3,5 @@ theme: jekyll-theme-minimal
 on:
   push:
     paths:
-      - 'no-mirror'
+      - 'assets/*'
 
