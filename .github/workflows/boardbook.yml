@@ -32,6 +32,7 @@ jobs:
        uses: pandoc/actions/setup@main
 
      - name: Make book
+       shell: bash
        run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; ${{ github.workspace }}/scripts/mkboardbook ~/output)
 
 
