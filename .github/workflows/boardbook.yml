@@ -32,10 +32,10 @@ jobs:
        uses: pandoc/actions/setup@{main}
 
 
-     - testing: Testing variables
+     - name: Testing variables
        run: echo ${{ inputs.group }} ", " ${{ inputs.folder }}
 
-     - testing2: Testing paths
+     - name: Testing paths
        run: echo ${{ github.workspace }}
 
 
