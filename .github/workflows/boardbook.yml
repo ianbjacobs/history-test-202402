@@ -7,12 +7,12 @@ on:
         description: 'Board or committee'
         required: true
         type: choice
-	options:
-	  - board
-	  - governance
-	  - finance
-	  - personnel
-	  - development
+        options:
+          - board
+          - governance
+          - finance
+          - personnel
+          - development
       folder:
         description: 'Folder name'
         required: true
