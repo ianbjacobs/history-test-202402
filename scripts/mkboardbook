@@ -1,0 +1,24 @@
+#!/bin/zsh -a
+
+USAGE="Usage: mkboardbook dest. Creates boardbook.zip in the temporary directory"
+TMPDIR="$1"
+
+
+if [ "$#" -gt 1 ]
+then 
+ echo $USAGE; exit 1
+fi
+
+echo "Saving to $TMPDIR/boardbook.zip"
+
+rsync -a * $TMPDIR
+cd $TMPDIR
+pwd
+ls
+
+#find . -name "*.md" -execdir ./convertmd {} \; -execdir rm {} \;
+#zip -r boardbook *
+
+
+	    
+

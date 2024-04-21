@@ -32,6 +32,6 @@ jobs:
        uses: pandoc/actions/setup@main
 
      - name: Make book
-       run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; ls)
+       run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; $HOME/scripts/mkboardbook ~/output)
 
 
