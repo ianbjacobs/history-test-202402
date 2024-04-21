@@ -28,7 +28,7 @@ jobs:
        with:
          ref: main
 
-     - name: Install panding to turn md to html
+     - name: Install pandoc to turn md to html
        uses: pandoc/actions/setup@main
 
      - name: Make book
