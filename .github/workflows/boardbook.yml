@@ -34,7 +34,8 @@ jobs:
      - name: Testing variables
        run: echo ${{ inputs.group }} ", " ${{ inputs.folder }}
 
-     - name: Testing paths
+     - name: Make book
+       run: cd board/meetings/${{ inputs.group }}/${{ inputs.folder }}
        run: ls
 
 
