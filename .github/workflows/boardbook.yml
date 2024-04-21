@@ -31,11 +31,7 @@ jobs:
      - name: Install panding to turn md to html
        uses: pandoc/actions/setup@main
 
-     - name: Testing variables
-       run: echo ${{ inputs.group }} ", " ${{ inputs.folder }}
-
      - name: Make book
-       run: cd board/meetings/${{ inputs.group }}/${{ inputs.folder }}
-       run: ls
+       run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; ls)
 
 
