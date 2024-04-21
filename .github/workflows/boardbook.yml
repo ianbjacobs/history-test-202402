@@ -1,0 +1,41 @@
+name: Generate a board book for a given meeting (identified by folder name).
+
+on:
+  workflow_dispatch:
+    inputs:
+      group:
+        description: 'Board or committee'
+        required: true
+        type: choice
+	options:
+	  - board
+	  - governance
+	  - finance
+	  - personnel
+	  - development
+      folder:
+        description: 'Folder name'
+        required: true
+        type: string
+
+jobs:
+ create-boardbook:
+   name: Create a zip file of meeting materials
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout latest version of repo
+       uses: actions/checkout@v3
+       with:
+         ref: main
+
+     - name: Install panding to turn md to html
+       uses: pandoc/actions/setup@{main}
+
+
+     - testing: Testing variables
+       run: echo ${{ inputs.group }} ", " ${{ inputs.folder }}
+
+     - testing2: Testing paths
+       run: echo ${{ github.workspace }}
+
+
