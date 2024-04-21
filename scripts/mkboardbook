@@ -1,4 +1,4 @@
-#!/bin/zsh -a
+#!bash -a
 
 USAGE="Usage: mkboardbook dest. Creates boardbook.zip in the temporary directory"
 TMPDIR="$1"
