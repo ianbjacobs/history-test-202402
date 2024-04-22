@@ -1,7 +1,7 @@
-#!bash -a
+#!/bin/sh
 
-USAGE="Usage: mkboardbook dest. Creates boardbook.zip in the temporary directory"
-TMPDIR="$1"
+export USAGE="Usage: mkboardbook dest. Creates boardbook.zip in the temporary directory"
+export TMPDIR="$1"
 
 
 if [ "$#" -gt 1 ]
