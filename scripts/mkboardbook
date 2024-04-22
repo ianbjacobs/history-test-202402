@@ -13,10 +13,10 @@ echo "Saving to $TMPDIR/boardbook.zip"
 
 rsync -a * $TMPDIR
 cd $TMPDIR
-pwd
-ls
+find . -name "*.md" -execdir ./convertmd {} \; -execdir rm {} \;
+find . -name
 
-#find . -name "*.md" -execdir ./convertmd {} \; -execdir rm {} \;
+
 #zip -r boardbook *
 
 
