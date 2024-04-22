@@ -41,7 +41,7 @@ jobs:
        shell: bash
        run: |
          mkdir output
-         ${{ inputs.group }} && EXCLUDE="--exclude board-only"
+         ${{ inputs.board-only }} && EXCLUDE="--exclude board-only"
          rsync -a $EXCLUDE board/meetings/${{ inputs.group }}/${{ inputs.folder }}/* output
          find output -name "*.md" -execdir convertmd {} \; -execdir rm {} \;
 
