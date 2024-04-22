@@ -43,10 +43,9 @@ jobs:
          cd output
          zip r boardbook *
 
-
-      - name: Provide access to boardbook.zip
-        uses: actions/upload-artifact@v4
-        with:
-          name: boardbook.zip
-          path: output
-          retention-days: 1 
+     - name: Provide access to boardbook.zip
+       uses: actions/upload-artifact@v4
+       with:
+         name: boardbook.zip
+         path: output
+         retention-days: 1
