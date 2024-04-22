@@ -1,4 +1,4 @@
-#!/bin/sh
+#!bash
 
 export SRC="$1"
 export DEST="$SRC:t:r.html"
