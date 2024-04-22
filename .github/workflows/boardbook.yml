@@ -17,6 +17,9 @@ on:
         description: 'Folder name'
         required: true
         type: string
+      board-only:
+        description: 'Check to exclude board-confidential materials'
+	type: boolean
 
 jobs:
  create-boardbook:
@@ -38,7 +41,8 @@ jobs:
        shell: bash
        run: |
          mkdir output
-         rsync -a board/meetings/${{ inputs.group }}/${{ inputs.folder }}/* output
+	 ${{ inputs.group }} && EXCLUDE="--exclude board-only"
+         rsync -a $EXCLUDE board/meetings/${{ inputs.group }}/${{ inputs.folder }}/* output
          find output -name "*.md" -execdir convertmd {} \; -execdir rm {} \;
 
      - name: Provide access to boardbook.zip
