@@ -33,6 +33,10 @@ jobs:
 
      - name: Make book
        shell: bash
-       run: (echo "${{ github.workspace }}/../scripts" >> ${{ github.path }}; cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; mkboardbook ~/output)
+       run: |
+         mkdir output \
+           rsync -a board/meetings/${{ inputs.group }}/${{ inputs.folder }}/* output \
+	   find output -name "*.md" -execdir scripts/convertmd {} \; -execdir rm {} \; \
+	   find output -name
 
 
