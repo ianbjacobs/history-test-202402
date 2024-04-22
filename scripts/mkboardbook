@@ -6,7 +6,7 @@ export TEMPLATE="https://raw.githubusercontent.com/ryangrose/easy-pandoc-templat
 export TOC="true"
 
 
-convertmd ()
+convertmd()
 {
   local SRC="$1"
   local DEST="$SRC:t:r.html"
