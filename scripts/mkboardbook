@@ -22,7 +22,7 @@ echo "Saving to $TMPDIR/boardbook.zip"
 rsync -a * $TMPDIR
 cd $TMPDIR
 
-find . -name "*.md" -execdir ./convertmd {} \; -execdir rm {} \;
+find . -name "*.md" -execdir convertmd {} \; -execdir rm {} \;
 find . -name
 
 
