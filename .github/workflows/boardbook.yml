@@ -33,6 +33,6 @@ jobs:
 
      - name: Make book
        shell: bash
-       run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; ${{ github.workspace }}/scripts/mkboardbook ~/output)
+       run: (cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; ../../../../scripts/mkboardbook ~/output)
 
 
