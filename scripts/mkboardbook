@@ -2,7 +2,15 @@
 
 export USAGE="Usage: mkboardbook dest. Creates boardbook.zip in the temporary directory"
 export TMPDIR="$1"
+export TEMPLATE="https://raw.githubusercontent.com/ryangrose/easy-pandoc-templates/master/html/elegant_bootstrap_menu.html"
+export TOC="true"
 
+
+function convertmd () {
+  local SRC="$1"
+  local DEST="$SRC:t:r.html"
+  pandoc $SRC -o $DEST --table-of-contents=$TOC --template=$TEMPLATE
+}
 
 if [ "$#" -gt 1 ]
 then 
@@ -13,6 +21,7 @@ echo "Saving to $TMPDIR/boardbook.zip"
 
 rsync -a * $TMPDIR
 cd $TMPDIR
+
 find . -name "*.md" -execdir ./convertmd {} \; -execdir rm {} \;
 find . -name
 
