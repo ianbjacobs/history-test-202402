@@ -33,6 +33,6 @@ jobs:
 
      - name: Make book
        shell: bash
-       run: (echo "$HOME/scripts" >> $GITHUB_PATH; cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; mkboardbook ~/output)
+       run: (echo "$HOME/scripts" >> $GITHUB_PATH; echo $GITHUB_PATH; cd board/meetings/${{ inputs.group }}/${{ inputs.folder }} ; mkboardbook ~/output)
 
 
