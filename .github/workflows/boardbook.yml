@@ -40,7 +40,7 @@ jobs:
          mkdir output
          rsync -a board/meetings/${{ inputs.group }}/${{ inputs.folder }}/* output
          find output -name "*.md" -execdir convertmd {} \; -execdir rm {} \;
-	 cd output
-	 zip r boardbook *
+         cd output
+         zip r boardbook *
 
 
