@@ -19,7 +19,7 @@ on:
         type: string
       board-only:
         description: 'Check to exclude board-confidential materials'
-	type: boolean
+        type: boolean
 
 jobs:
  create-boardbook:
