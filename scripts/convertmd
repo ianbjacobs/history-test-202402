@@ -3,7 +3,7 @@ export DEST="`basename $SRC .md`.html"
 export TEMPLATE="https://raw.githubusercontent.com/ryangrose/easy-pandoc-templates/master/html/elegant_bootstrap_menu.html"
 export TOC="true"
 
-pandoc $SRC -o $DEST --table-of-contents=$TOC --template=$TEMPLATE
+pandoc $SRC -o $DEST --table-of-contents=$TOC --template=$TEMPLATE --embed-resources=true
 
 
 	    
