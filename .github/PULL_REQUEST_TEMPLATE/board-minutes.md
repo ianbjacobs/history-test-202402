@@ -1,3 +1,8 @@
+---
+name: "Minutes of YYYY-MM-DD Board Meeting"
+---
+
+
 # Description
 
 # Checklist
